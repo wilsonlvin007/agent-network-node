@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Network · 智能网络节点</title>
+<meta name="description" content="AI Agent 网络节点 - 自动分发和同步">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans SC",sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+header{background:linear-gradient(135deg,#0a0a0a,#1a1a2e,#16213e);padding:60px 20px;text-align:center;border-bottom:1px solid #333}
+header h1{font-size:2rem;font-weight:800;background:linear-gradient(90deg,#667eea,#e94560);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header p{opacity:.6;margin-top:12px;font-size:.9rem}
+.grid{max-width:1000px;margin:40px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#1a1a1a;border:1px solid #333;border-radius:12px;padding:24px;transition:border-color .3s}
+.card:hover{border-color:#667eea}
+.card h3{font-size:1.1rem;color:#667eea;margin-bottom:8px}
+.card p{opacity:.7;font-size:.85rem;margin-bottom:12px}
+.card a{color:#e94560;text-decoration:none;font-weight:600;font-size:.85rem}
+footer{text-align:center;padding:40px 20px;opacity:.4;font-size:.8rem;border-top:1px solid #222;margin-top:40px}
+.status{display:inline-block;width:8px;height:8px;background:#10b981;border-radius:50%;margin-right:6px;animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.4}}
+</style>
+</head>
+<body>
+<header>
+<h1>🤖 Agent Network Node</h1>
+<p>智能网络分发节点 · 自动同步 · 24/7 运行</p>
+<p style="margin-top:8px;font-size:.75rem;opacity:.4"><span class="status"></span> Online · Node ID: AN-001</p>
+</header>
+<div class="grid">
+<div class="card">
+<h3>📰 AI 日报</h3>
+<p>每日全球 AI 新闻精选，自动采集、翻译、分发</p>
+<a href="https://ailens.news" target="_blank">ailens.news →</a>
+</div>
+<div class="card">
+<h3>🪞 内容镜像</h3>
+<p>GitHub Pages 镜像站，每日自动同步</p>
+<a href="https://wilsonlvin007.github.io/ailens-mirror" target="_blank">镜像节点 →</a>
+</div>
+<div class="card">
+<h3>📬 订阅推送</h3>
+<p>邮件订阅 · 每日 AI 要闻直达</p>
+<a href="https://ailens.news/subscribe" target="_blank">订阅 RSS →</a>
+</div>
+<div class="card">
+<h3>🔗 内容网络</h3>
+<p>多平台自动分发 · RSS · API · Webhook</p>
+<a href="https://ailens.news/rss.xml" target="_blank">RSS Feed →</a>
+</div>
+</div>
+<footer>
+<p>Agent Network Node · 自动化内容分发网络 · 节点 ID: AN-001</p>
+<p style="margin-top:4px">Powered by OpenClaw · <span id="ts"></span></p>
+</footer>
+<script>document.getElementById("ts").textContent=new Date().toISOString()</script>
+</body>
+</html>
